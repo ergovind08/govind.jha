@@ -427,7 +427,7 @@ body {
 
 
 
-/* Whatsapp btn */
+/* ***************************************************************** WHATSAPP LINK SETTING CSS******************************************************* */
 
 .whatsapp{
   position: fixed;
@@ -443,12 +443,52 @@ body {
   border-radius: 50%;
 }
 
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  height: 100px;
+  width: 150px;
+}
+
+.btn-whatsapp {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .whatsapp {
+    bottom: 20px;
+    right: 10px;
+    height: 80px;
+    width: 120px;
+  }
+  
+  .btn-whatsapp {
+    width: 80px;
+  }
+}
+
+/* Media query for screens smaller than 500px */
+@media only screen and (max-width: 499px) {
+  .whatsapp {
+    bottom: 10px;
+    right: 5px;
+    height: 60px;
+    width: 90px;
+  }
+  
+  .btn-whatsapp {
+    width: 60px;
+  }
+}
 
 
 
 
 
-
+/* ***************************************************************** WHATSAPP LINK SETTING CSS******************************************************* */
 
 
 
@@ -602,6 +642,120 @@ img {
 
 
 
+/* ***********************************************  MEDIA QUERIES FOR YOUTUBE VIDEO CARDS START******************************* */
+
+
+
+@media (max-width: 600px) {
+  .cards-area {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 1rem;
+  }
+  .card-list {
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+  }
+  .card {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* For screens larger than 600px (e.g. desktop) */
+@media (min-width: 601px) {
+  .cards-area {
+    top: -200px; /* Moved to media query to only apply to larger screens */
+  }
+}
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+@media (max-width: 768px) {
+  .card-list {
+  max-width: 300px;
+  }
+  
+  .card {
+  padding: 1rem;
+  }
+  
+  .card-header a {
+  font-size: 1.25rem;
+  }
+  
+  .icon-button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  }
+  
+  .card-meta:first-child:after {
+  display: none;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***********************************************  MEDIA QUERIES FOR YOUTUBE VIDEO CARDS eND******************************* */
+
+
+
+/* MEDIA QUERIES FOR LOGIN EMAIL LINK START*************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* **************************************** Blogs page Slide Show  start *******************************************/
 
@@ -657,7 +811,7 @@ img {
   width: 180px;
   perspective: 450px;
   position: relative;
-  padding-top: 70px;
+  padding-top: 20px;
 
 }
 
@@ -751,7 +905,7 @@ img {
 }  */
 
 .content-carrousel {
-  animation: rotar-clockwise 10s linear infinite;
+  animation: rotar-clockwise 20s linear infinite;
 }
 
 .element:nth-child(2) {
@@ -787,7 +941,59 @@ img {
 
 
 
-/* Add media queries for different screen sizes */
+/* Add media queries for different screen sizes  for slid-show */
+
+
+
+@media (max-width: 968px) {
+  /* Adjust the font size and padding for smaller screens */
+  .slideshow-title {
+    font-size: 36px;
+    padding-top: 70px;
+  }
+  
+  /* Adjust the layout of the slideshow for smaller screens */
+  .entire-content {
+    padding-top: 50px;
+    width: 25%;
+  }
+  
+  .content-carrousel figure {
+    height: 80px;
+  }
+  
+  .content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(200px); 
+  } 
+  .content-carrousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(200px); 
+  } 
+  .content-carrousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(200px); 
+  }
+  .content-carrousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(200px); 
+  }
+  .content-carrousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(200px); 
+  } 
+  .content-carrousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(200px); 
+  }
+  .content-carrousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(200px); 
+  }
+  .content-carrousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(200px); 
+  }
+  .content-carrousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(200px); 
+  }
+  .content-carrousel figure:nth-child(10) {
+    transform: rotateY(360deg) translateZ(200px); 
+  } 
+}
+
 
 
 
@@ -811,7 +1017,7 @@ img {
 
 
 
-/* *******************************Social media link*********************** */
+/* *******************************Social media link  START*********************** */
 
 
 section {
@@ -927,7 +1133,35 @@ section {
 
 
 
-/*socil*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************socia----Links***********************************l*/
 .slider-nav{
         display: flex;
 }
@@ -993,6 +1227,9 @@ section {
         border: 1px solid rgba(132, 132, 164, 0.35);
         animation: 1.5s linear 0s normal none infinite focuse; }
 
+
+        /* KEYFRAME */
+
 @keyframes focuse {
   0% {
     transform: scale(0.8);
@@ -1038,18 +1275,7 @@ section {
 
 
 
-/* ----------------------------------------------
- * Generated by Animista on 2019-9-24 11:37:28
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
-/**
- * ----------------------------------------
- * animation jello-horizontal
- * ----------------------------------------
- */
 @-webkit-keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -1135,6 +1361,52 @@ section {
 }
 
 
+/* MEDIA QUESRIES FOR SOCIA MEDIA LINKS */
+
+
+/* For screens smaller than 768px */
+@media (max-width: 468px) {
+  .slider-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .process-scetion .slider-nav-item {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .process-scetion .slider-nav-item:before {
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+  }
+
+  .process-scetion .slider-nav-item.active:before {
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+  }
+
+  .process-scetion .slider-nav-item .ikon {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+/* For screens 500px and less */
+@media (max-width: 500px) {
+  .slider-nav {
+    flex-wrap: wrap;
+  }
+  .process-scetion .slider-nav-item {
+    margin-bottom: 10px;
+  }
+}
 
 
 
